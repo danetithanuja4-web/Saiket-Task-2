@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Wireless Headphones - TechStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="header-container">
+                <div class="logo">
+                    <i class="fas fa-shopping-bag"></i> TechStore
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search products...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="header-icons">
+                    <div class="icon-item">
+                        <i class="fas fa-truck"></i>
+                        <span>Track Order</span>
+                    </div>
+                    <div class="icon-item">
+                        <i class="fas fa-user"></i>
+                        <span>Account</span>
+                    </div>
+                    <div class="icon-item cart-icon" onclick="toggleCart()">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">Electronics</a>
+            <a href="#" class="nav-link">Accessories</a>
+            <a href="#" class="nav-link">Deals</a>
+            <a href="#" class="nav-link">Best Sellers</a>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="#">Home</a>
+            <span>></span>
+            <a href="#">Electronics</a>
+            <span>></span>
+            <a href="#">Audio</a>
+            <span>></span>
+            <span>Premium Wireless Headphones</span>
+        </div>
+    </div>
+
+    <!-- Main Product Section -->
+    <main class="main-content">
+        <div class="container">
+            <div class="product-container">
+                <!-- Product Images -->
+                <div class="product-images">
+                    <div class="main-image">
+                        <img id="main-image" src="https://via.placeholder.com/500x500?text=Premium+Wireless+Headphones" alt="Premium Wireless Headphones">
+                        <span class="delivery-badge">Free Delivery</span>
+                    </div>
+                    <div class="thumbnail-container">
+                        <img class="thumbnail" src="https://via.placeholder.com/80?text=View+1" alt="View 1" onclick="changeImage(this)">
+                        <img class="thumbnail" src="https://via.placeholder.com/80?text=View+2" alt="View 2" onclick="changeImage(this)">
+                        <img class="thumbnail" src="https://via.placeholder.com/80?text=View+3" alt="View 3" onclick="changeImage(this)">
+                        <img class="thumbnail" src="https://via.placeholder.com/80?text=View+4" alt="View 4" onclick="changeImage(this)">
+                    </div>
+                    <div class="image-actions">
+                        <button class="action-btn">
+                            <i class="fas fa-heart"></i> Add to Wishlist
+                        </button>
+                        <button class="action-btn">
+                            <i class="fas fa-share-alt"></i> Share
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Details -->
+                <div class="product-details">
+                    <!-- Product Title and Rating -->
+                    <div class="product-header">
+                        <h1 class="product-title">Premium Wireless Headphones Pro X</h1>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-value">4.5</span>
+                            <span class="review-count">(1,248 reviews)</span>
+                            <span class="in-stock">In Stock</span>
+                        </div>
+                    </div>
+
+                    <!-- Price Section -->
+                    <div class="price-section">
+                        <div class="price">
+                            <span class="current-price">$129.99</span>
+                            <span class="original-price">$199.99</span>
+                            <span class="discount">-35%</span>
+                        </div>
+                        <div class="pricing-info">
+                            <p><i class="fas fa-check-circle"></i> Inclusive of all taxes</p>
+                            <p><i class="fas fa-truck"></i> Get it by Tomorrow (Standard Delivery)</p>
+                        </div>
+                    </div>
+
+                    <!-- Product Highlights -->
+                    <div class="highlights">
+                        <h3>Key Features</h3>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> 40-hour battery life</li>
+                            <li><i class="fas fa-check"></i> Active Noise Cancellation</li>
+                            <li><i class="fas fa-check"></i> Premium sound quality with bass boost</li>
+                            <li><i class="fas fa-check"></i> Comfortable over-ear design</li>
+                            <li><i class="fas fa-check"></i> Bluetooth 5.2 connectivity</li>
+                        </ul>
+                    </div>
+
+                    <!-- Color Selection -->
+                    <div class="option-group">
+                        <label class="option-label">Color:</label>
+                        <div class="color-selector">
+                            <input type="radio" id="color-black" name="color" value="black" checked>
+                            <label for="color-black" class="color-box" style="background-color: #000;" title="Black"></label>
+
+                            <input type="radio" id="color-silver" name="color" value="silver">
+                            <label for="color-silver" class="color-box" style="background-color: #c0c0c0;" title="Silver"></label>
+
+                            <input type="radio" id="color-blue" name="color" value="blue">
+                            <label for="color-blue" class="color-box" style="background-color: #1e90ff;" title="Blue"></label>
+
+                            <input type="radio" id="color-rose" name="color" value="rose">
+                            <label for="color-rose" class="color-box" style="background-color: #ff69b4;" title="Rose Gold"></label>
+                        </div>
+                    </div>
+
+                    <!-- Warranty Selection -->
+                    <div class="option-group">
+                        <label class="option-label">Warranty:</label>
+                        <select id="warranty" class="select-box">
+                            <option value="1-year">1 Year Manufacturer Warranty (FREE)</option>
+                            <option value="2-year">2 Years Extended Warranty (+$15.99)</option>
+                            <option value="3-year">3 Years Extended Warranty (+$24.99)</option>
+                        </select>
+                    </div>
+
+                    <!-- Quantity Selection -->
+                    <div class="option-group">
+                        <label class="option-label">Quantity:</label>
+                        <div class="quantity-selector">
+                            <button onclick="decreaseQuantity()" class="qty-btn">−</button>
+                            <input type="number" id="quantity" value="1" min="1" max="10" readonly>
+                            <button onclick="increaseQuantity()" class="qty-btn">+</button>
+                        </div>
+                        <span class="stock-info" id="stock-info">Only 5 items left!</span>
+                    </div>
+
+                    <!-- Add to Cart & Buy Now -->
+                    <div class="action-buttons">
+                        <button class="btn btn-primary" onclick="addToCart()">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                        <button class="btn btn-secondary">
+                            <i class="fas fa-bolt"></i> Buy Now
+                        </button>
+                    </div>
+
+                    <!-- Delivery & Return Info -->
+                    <div class="delivery-info">
+                        <div class="info-item">
+                            <i class="fas fa-shipping-fast"></i>
+                            <div>
+                                <p class="info-title">FREE Delivery</p>
+                                <p class="info-subtitle">Enjoy free delivery on all orders above $50</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-undo"></i>
+                            <div>
+                                <p class="info-title">Easy Returns</p>
+                                <p class="info-subtitle">30-day hassle-free return policy</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <p class="info-title">Secure Payment</p>
+                                <p class="info-subtitle">100% secure transactions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Description & Specifications -->
+            <div class="product-section">
+                <div class="tabs">
+                    <button class="tab-button active" onclick="switchTab(event, 'description')">Description</button>
+                    <button class="tab-button" onclick="switchTab(event, 'specifications')">Specifications</button>
+                    <button class="tab-button" onclick="switchTab(event, 'reviews')">Reviews</button>
+                </div>
+
+                <!-- Description Tab -->
+                <div id="description" class="tab-content active">
+                    <h2>Product Description</h2>
+                    <p>Experience premium audio quality with the Premium Wireless Headphones Pro X. These cutting-edge headphones combine sleek design with powerful features to deliver an unparalleled listening experience.</p>
+                    <h3>Why Choose These Headphones?</h3>
+                    <p><strong>Superior Sound Quality:</strong> Equipped with 40mm drivers and advanced audio processing technology, these headphones deliver crystal-clear highs and deep, resonant bass.</p>
+                    <p><strong>Active Noise Cancellation:</strong> Our proprietary ANC technology blocks out up to 98% of ambient noise, allowing you to fully immerse yourself in your music.</p>
+                    <p><strong>Extended Battery Life:</strong> With up to 40 hours of playback on a single charge, you can enjoy your music all day and all night without worrying about battery drain.</p>
+                    <p><strong>Comfortable Design:</strong> Featuring memory foam ear cups and an adjustable headband, these headphones are comfortable to wear for extended periods.</p>
+                </div>
+
+                <!-- Specifications Tab -->
+                <div id="specifications" class="tab-content">
+                    <h2>Specifications</h2>
+                    <table class="specs-table">
+                        <tr>
+                            <td class="spec-label">Driver Size</td>
+                            <td>40mm</td>
+                        </tr>
+                        <tr>
+                            <td class="spec-label">Frequency Response</td>
+                            <td>20Hz - 20,000Hz</td>
+                        </tr>
+                        <tr>
+                            <td class="spec-label">Impedance</td>
+                            <td>32Ω</td>
+                        </tr>
+                        <tr>
+                            <td class="spec-label">Bluetooth Version</td>
+                            <td>5.2</td>
+                        </tr>
+                        <tr>
+                            <td class="spec-label">Battery Life</td>
+                            <td>40 hours (with ANC off: 50 hours)</td>
+                        </tr>
+                        <tr>
+                            <td class="spec-label">Charging Time</td>
+                            <td>2 hours</td>
+                        </tr>
+                        <tr>
+                            <td class="spec-label">Weight</td>
+                            <td>250g</td>
+                        </tr>
+                        <tr>
+                            <td class="spec-label">Color Options</td>
+                            <td>Black, Silver, Blue, Rose Gold</td>
+                        </tr>
+                        <tr>
+                            <td class="spec-label">Warranty</td>
+                            <td>1 Year Manufacturer Warranty</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Reviews Tab -->
+                <div id="reviews" class="tab-content">
+                    <h2>Customer Reviews</h2>
+                    <div class="reviews-summary">
+                        <div class="rating-overview">
+                            <div class="overall-rating">4.5</div>
+                            <div class="rating-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p>Based on 1,248 reviews</p>
+                        </div>
+                        <div class="rating-breakdown">
+                            <div class="rating-row">
+                                <span>5 stars</span>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 65%"></div>
+                                </div>
+                                <span>65%</span>
+                            </div>
+                            <div class="rating-row">
+                                <span>4 stars</span>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 20%"></div>
+                                </div>
+                                <span>20%</span>
+                            </div>
+                            <div class="rating-row">
+                                <span>3 stars</span>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 10%"></div>
+                                </div>
+                                <span>10%</span>
+                            </div>
+                            <div class="rating-row">
+                                <span>2 stars</span>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 3%"></div>
+                                </div>
+                                <span>3%</span>
+                            </div>
+                            <div class="rating-row">
+                                <span>1 star</span>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 2%"></div>
+                                </div>
+                                <span>2%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-write">
+                        <h3>Share Your Review</h3>
+                        <button class="btn btn-secondary">Write a Review</button>
+                    </div>
+
+                    <div class="reviews-list">
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div>
+                                    <p class="reviewer-name">John Smith</p>
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <span class="review-date">2 weeks ago</span>
+                            </div>
+                            <p class="review-title">Best headphones I've ever owned!</p>
+                            <p class="review-text">The sound quality is exceptional, and the noise cancellation is incredibly effective. Battery life is impressive, and they're very comfortable for long listening sessions.</p>
+                            <div class="review-actions">
+                                <button><i class="fas fa-thumbs-up"></i> Helpful (142)</button>
+                                <button><i class="fas fa-thumbs-down"></i> Not Helpful (5)</button>
+                            </div>
+                        </div>
+
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div>
+                                    <p class="reviewer-name">Sarah Johnson</p>
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                                <span class="review-date">1 month ago</span>
+                            </div>
+                            <p class="review-title">Great product, excellent value</p>
+                            <p class="review-text">Excellent build quality and the active noise cancellation works wonderfully. Only minor issue is they can feel a bit heavy after extended use, but overall very satisfied.</p>
+                            <div class="review-actions">
+                                <button><i class="fas fa-thumbs-up"></i> Helpful (87)</button>
+                                <button><i class="fas fa-thumbs-down"></i> Not Helpful (2)</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related Products -->
+            <div class="related-products">
+                <h2>You Might Also Like</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/200x200?text=Wireless+Speaker" alt="Wireless Speaker">
+                        <p class="product-name">Premium Wireless Speaker</p>
+                        <p class="product-price">$89.99</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(542)</span>
+                        </div>
+                        <button class="btn btn-small">Add to Cart</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/200x200?text=USB+Cable" alt="USB Cable">
+                        <p class="product-name">Premium USB-C Cable</p>
+                        <p class="product-price">$19.99</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(312)</span>
+                        </div>
+                        <button class="btn btn-small">Add to Cart</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/200x200?text=Phone+Mount" alt="Phone Mount">
+                        <p class="product-name">Adjustable Phone Mount</p>
+                        <p class="product-price">$24.99</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(876)</span>
+                        </div>
+                        <button class="btn btn-small">Add to Cart</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/200x200?text=Carrying+Case" alt="Carrying Case">
+                        <p class="product-name">Premium Headphones Case</p>
+                        <p class="product-price">$29.99</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(654)</span>
+                        </div>
+                        <button class="btn btn-small">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="#">Electronics</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Deals</a></li>
+                    <li><a href="#">Best Sellers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 TechStore. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Cart Notification -->
+    <div id="notification" class="notification"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
